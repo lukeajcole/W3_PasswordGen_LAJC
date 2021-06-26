@@ -12,7 +12,7 @@ function writePassword() {
     var passwordText = document.querySelector("#password");
 
     passwordText.value = password;
-    document.getElementById("copyNote").textContent = "HELLLOOOO";
+    document.getElementById("copyNote").textContent = "";
 }
 
 function generatePassword() {
