@@ -12,7 +12,7 @@ function writePassword() {
     var passwordText = document.querySelector("#password");
 
     passwordText.value = password;
-    document.getElementById("copyNote").textContent = "";
+    document.getElementById("copyNote").textContent = "HELLLOOOO";
 }
 
 function generatePassword() {
@@ -87,7 +87,6 @@ function generatePassword() {
     }
 
   // Actually Generate the PSWD
-
     for (i=PSWD.length; i < numChar; i++){
       var selectRandom = getRandomInt(cleanCriteria.length);
       if (cleanCriteria[selectRandom] == "S") {
@@ -115,7 +114,6 @@ function getRandomInt(max) {
 function shuffleString (string) {
     var a = string.split(""),
         n = a.length;
-
     for(var i = n - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
         var tmp = a[i];
