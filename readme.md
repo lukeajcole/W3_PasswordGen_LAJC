@@ -1,4 +1,4 @@
-Welcome to my [password generator project](WEBSITE). 
+Welcome to my [password generator project](https://lukeajcole.github.io/W3_PasswordGen_LAJC/). 
 
 **Project Code:**
 
