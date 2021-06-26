@@ -30,6 +30,7 @@ function generatePassword() {
       return;
     } else if (!criteria.includes("S") && !criteria.includes("U") && !criteria.includes("L") && !criteria.includes("N")){
       goodnumChar = false;
+      alert("You must enter S, N, L, or U");
     } else {
       goodCriteria = true;
     }
@@ -63,15 +64,17 @@ function generatePassword() {
 //Get number of characters and make sure it's good
   var goodnumChar = false;
   while (!goodnumChar) {
-    var numChar = parseInt(prompt("How many characters should the password have?", "0"));
+    var numChar = parseInt(prompt("How many characters should the password have?\n(Min 8, Max 128)", "0"));
     console.log(Number.isInteger(numChar));
     //Don't continue unless a number is entered between 0 and 36
     if (numChar == "" || numChar == null) {
       return;
     } else if (!Number.isInteger(numChar)) {
       goodnumChar = false;
+      alert("Make sure you enter a number");
      } else if (numChar < 8 || numChar > 128) {
       goodnumChar = false;
+      alert("Out of Range");
     } else {
       goodnumChar = true;
     }
