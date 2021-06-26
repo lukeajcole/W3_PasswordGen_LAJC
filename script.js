@@ -70,7 +70,7 @@ function generatePassword() {
       return;
     } else if (!Number.isInteger(numChar)) {
       goodnumChar = false;
-     } else if (numChar <= 8 || numChar >= 128) {
+     } else if (numChar < 8 || numChar > 128) {
       goodnumChar = false;
     } else {
       goodnumChar = true;
